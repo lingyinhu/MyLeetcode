@@ -1,0 +1,23 @@
+#include <vector>
+#include <iostream>
+
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        int i,j;
+        for(i=0;i<nums.size();i++){
+            for(j=i+1;j<nums.size();j++){
+                if(nums[i]+nums[j]==target){
+                    vector<int> result={i,j};
+                    return result;
+        } 
+    }
+};
+
+int main(){
+    Solution s;
+    vector<int> nums={2,7,11,15};
+    vector<int> result=s.twoSum(nums,9);
+    for(int i=0;i<result.size();i++){
+        cout<<result[i]<<" ";
+}
