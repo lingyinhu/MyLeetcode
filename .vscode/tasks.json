@@ -11,10 +11,10 @@
             "-fexec-charset=GBK",   //在编译时转为GBK
             "-g",
             "${file}",//单个cpp文件，为"${file}"；多个cpp，修改为"${fileDirname}\\*.cpp"
-            //"-o",
-            //"${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "-o",
+            "${fileDirname}\\${fileBasenameNoExtension}.exe",
             "-I",
-            "D:\\CPP\\Test",      /*修改成自己放c/c++项目的文件夹，这里的路径和电脑里复制的文件目录有一点不一样，这里是两个反斜杠\\*/
+            "D:\\CPP\\MyLeetcode",      /*修改成自己放c/c++项目的文件夹，这里的路径和电脑里复制的文件目录有一点不一样，这里是两个反斜杠\\*/
             "-std=c++17"
         ],
         "options": {
